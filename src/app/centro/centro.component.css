@@ -1,0 +1,14 @@
+.row {
+    color: white;
+    background-color: lightseagreen;
+    margin-bottom: 4px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}

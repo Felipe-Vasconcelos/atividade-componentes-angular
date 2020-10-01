@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="container col-3">
+        <h2> PORTAL DE VIAGENS </h2>
+    </div>
+    <div class="container col-sm-2" ngbDropdown>
+        <button class="btn-lg" id="destinos" ngbDropdownToggle>DESTINOS</button>
+        <div ngbDropdownMenu aria-labelledby="destinos">
+            <li *ngFor="let d of destinos">
+                <button ngbDropdownItem> {{d}} </button>
+            </li>
+        </div>
+    </div>
+    <div class="container col-sm-2" ngbDropdown>
+        <button class="btn-lg" id="valores" ngbDropdownToggle>VALORES</button>
+        <div ngbDropdownMenu aria-labelledby="valores">
+            <li *ngFor="let v of valores">
+                <button ngbDropdownItem> {{v}} </button>
+            </li>
+        </div>
+    </div>
+    <div class="container col-sm-2" ngbDropdown>
+        <button class="btn-lg" id="contato" ngbDropdownToggle>CONTATO</button>
+        <div ngbDropdownMenu aria-labelledby="contato">
+            <li *ngFor="let c of contato">
+                <button ngbDropdownItem> {{c}} </button>
+            </li>
+        </div>
+    </div>
+</div>

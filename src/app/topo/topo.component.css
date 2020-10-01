@@ -1,0 +1,20 @@
+.row {
+    background-color: darkblue;
+    margin-bottom: 4px;
+    padding: 10px; 
+}
+
+h2, button {
+    display: inline-block;
+    padding: 4px;     
+}
+
+div .col-3 {
+    color: white;    
+}
+
+button {
+    margin-top: 5px;
+    background-color: lightseagreen;
+    color: aliceblue;
+}

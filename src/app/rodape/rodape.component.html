@@ -1,0 +1,35 @@
+<div class="container">
+    <form #viagemForm="ngForm" (ngSubmit)="salvar(viagemForm)">
+        <h2> Consultar valores </h2>
+        <div id="origem" class="row">
+            <div class="form-group col-12">
+                <label for="origemInput">Origem</label>
+                <input type="text" placeholder="Origem" class="form-control" name="origem" ngModel>
+            </div>
+        </div>
+        <div id="destino" class="row">
+            <div class="form-group col-12">
+                <label for="destinoInput">Destino</label>
+                <input type="text" placeholder="Destino" class="form-control" name="destino" ngModel>
+            </div>
+        </div>
+        <div id="dataDePartida" class="row">
+            <div class="form-group col-12">
+                <label for="dataDePartidaInput">Data de partida</label>
+                <input type="text" placeholder="Data de partida" class="form-control" name="dataDePartida" ngModel>
+            </div>
+        </div>
+        <div id="dataDeVolta" class="row">
+            <div class="form-group col-12">
+                <label for="dataDeVoltaInput">Data de volta</label>
+                <input type="text" placeholder="Data de volta" class="form-control" name="dataDeVolta" ngModel>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary btn-block" (click)="gerarValor()">Consultar</button>
+            </div>
+            <h4>Valor da viagem: R$ {{valor}}</h4>
+        </div>
+    </form>
+</div>
